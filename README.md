@@ -81,7 +81,7 @@ docker ps -a | Select-String "rocketcounter|redis"
 ```bash
 docker network ls | Select-String "rocketcounter"
 ```
- проверяем что контейнеры и сети `Docker` отсутствуют, следовательно удаление прошло успешно
+ проверяем что контейнеры и сети `Docker` отсутствуют(т.к. вывод команд пустой), следовательно удаление прошло успешно
 
 ---
 
