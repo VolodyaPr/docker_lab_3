@@ -1,6 +1,4 @@
-# Отчёт
-
-## docker history
+# Отчёт по лабораторной работе 3: Redis, Rocket Counter, docker-compose.yml
 
 ### Запуск контейнера redis и проверка что он запущен
 
@@ -75,6 +73,15 @@ ports:
 После чего удаляем контейнер со всеми зависимостями
 
 <img width="811" height="350" alt="10" src="https://github.com/user-attachments/assets/b77bd13a-ff0f-4371-a608-ffc48780b337" />
+
+И с помощью команд:
+```bash
+docker ps -a | Select-String "rocketcounter|redis"
+```
+```bash
+docker network ls | Select-String "rocketcounter"
+```
+ проверяем что контейнеры и сети `Docker` отсутствуют, следовательно удаление прошло успешно
 
 ---
 
